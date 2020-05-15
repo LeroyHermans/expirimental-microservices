@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace MessagingService.Controllers
 {
     [ApiController]
-    [Route("api/messaging")]
+    [Route("api/v1/messaging")]
     public class MessagingApi : ControllerBase
     {
         [HttpGet, Route("")]
