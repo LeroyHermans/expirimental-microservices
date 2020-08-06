@@ -1,0 +1,18 @@
+{
+    "ReRoutes": [
+        {
+        "DownstreamPathTemplate": "/api/{version}/{catchAll}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5001
+            }
+        ],
+        "UpstreamPathTemplate": "/messaging-api/{version}/{catchAll}"
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5000"
+    }
+}
